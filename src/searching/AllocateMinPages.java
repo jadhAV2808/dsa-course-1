@@ -10,7 +10,20 @@ public class AllocateMinPages {
 		int maxPages = findMaxPages(pages,n,k);
 		System.out.println("maxPages: "+ maxPages);
 	}
+	
+	
+	
+	/*
+	 * efficient
+	 */
+	private static int findMaxPages1(int[] pages, int n,int k) {
+		
+		return 0;
+	}
 
+	/*
+	 * naive
+	 */
 	private static int findMaxPages(int[] pages, int n,int k) {
 		if(k==1)
 			return sum(pages,0,n-1);
