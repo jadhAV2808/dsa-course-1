@@ -1,30 +1,28 @@
-package recursion;
+package my.practice.string;
 
-/*
- * for string of length n there will be n! permutations
- */
-
-public class AllPermutations {
+public class Permutations {
 
 	public static void main(String[] args) {
+		
 		String str = "ABC";
 		
-		printPermutations(0, str);
+		printPermutations(0,str);
 	}
 
 	private static void printPermutations(int index, String str) {
 		
-		if(index==str.length()-1) {
+		if(index == str.length()) {
 			System.out.println(str);
-	        return;
+			return;
 		}
-			
-			
 		
 		for(int i=index;i<str.length();i++) {
-			String res = swap(str, index,i);
-			printPermutations(index+1, res);
+			
+			String reString = swap(str, index, i);
+			printPermutations(index+1, reString);
 		}
+		
+		
 	}
 
 	private static String swap(String str, int i, int j) {
