@@ -34,6 +34,9 @@ public class AnagramCheck {
 		return s1.equals(s2);
 	}
 	
+	/*
+	 * efficient
+	 */
 	static final int CHAR=256;
 	private static boolean isAnagram1(String s1, String s2) {
 		if(s1.length()!=s2.length())
