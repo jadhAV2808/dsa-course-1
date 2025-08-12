@@ -1,5 +1,12 @@
 
 Queue: FIFO
+  we maintain two pointers, front and rear. 
+  The front points to the first item of the queue 
+  and rear points to the last item.
+
+	enQueue(): This operation adds a new node after the rear and moves the rear to the next node.
+	deQueue(): This operation removes the front node and moves the front to the next node.
+
 
 operations: 
 	1] enqueue()
@@ -14,3 +21,30 @@ Applications of Queue:
 2] synchronization between slow & fast devices
 3] in operating systems(semaphores, FCFS scheduling)
 4] in computer n/w (routers/switches and mail queues)  
+
+
+Queue in Java: 
+      interface implemented by the following classes: 
+      1] LinkedList  2] ArrayDeque
+      
+      
+Common Methods: 
+
+    add(element): Adds an element to the rear of the queue. 
+                 If the queue is full, it throws an exception.
+    
+	offer(element): Adds an element to the rear of the queue. 
+	                If the queue is full, it returns false.
+	
+	remove(): Removes and returns the element at the front of the queue. 
+	          If the queue is empty, it throws an exception.
+	           
+	poll(): Removes and returns the element at the front of the queue. 
+	        If the queue is empty, it returns null.
+	        
+	element(): Returns the element at the front of the queue without removing it. 
+	           If the queue is empty, it throws an exception.
+	           
+	peek(): Returns the element at the front of the queue without removing it. 
+	        If the queue is empty, it returns null.
+	        
