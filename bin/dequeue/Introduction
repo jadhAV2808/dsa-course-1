@@ -1,0 +1,20 @@
+Dequeue: 
+   Deque or Double Ended Queue is a generalized version of Queue data structure 
+   that allows insert and delete at both ends.
+   
+   	Deque can act as both Stack and Queue
+	It is useful in many problems where we need to have a subset of all operations also like insert/remove at front and insert/remove at the end.
+	It is typically implemented either using a doubly linked list or circular array
+
+Applications:
+1] a deque can be used as both stack & queue
+2] maintaining history of action
+
+DeQue in Java:
+   Deque Interface present in java.util package is a subtype of the queue interface. 
+   The Deque is related to the double-ended queue that supports adding or removing elements from either end of the data structure. 
+   It can either be used as a queue(first-in-first-out/FIFO) or as a stack(last-in-first-out/LIFO).
+   Deque is the acronym for double-ended queue.
+
+
+ArrayDeque: 

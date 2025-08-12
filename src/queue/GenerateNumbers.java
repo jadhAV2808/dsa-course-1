@@ -22,6 +22,9 @@ public class GenerateNumbers {
 		printNumbers(n);
 	}
 
+	/*
+	 * tc:O(n)
+	 */
 	private static void printNumbers(int n) {
 		Queue<String> queue = new LinkedList<>();
 		
