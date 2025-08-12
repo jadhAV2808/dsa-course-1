@@ -1,9 +1,9 @@
-package linkedList;
+package stack;
 
 public class Node {
 	
-	public int data;
-	public Node next;
+	int data;
+	Node next;
 	
 	public Node() {}
 	
