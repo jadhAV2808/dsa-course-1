@@ -1,6 +1,5 @@
 package tree;
 
-import java.nio.file.Path;
 import java.util.ArrayList;
 
 /*
@@ -27,6 +26,36 @@ public class LCAOfBT {
 		
 		Node node = findLca(root, 50,90);
 		System.out.println("lca: " + node.data);
+		
+		node = findLca1(root, 50,90);
+		System.out.println("lca: " + node.data);
+	}
+	
+	
+	
+	/*
+	 * efficient
+	 * 
+	 * we do normal recursive traversal .
+	 * 
+	 */
+	private static Node findLca1(Node root, int n1, int n2) {
+		if(root==null)
+			return root;
+		
+		if(root.data==n1 && root.data==n2)
+			return root;
+		
+		Node lca1 = findLca1(root.left, n1, n2);
+		Node lca2 = findLca1(root.right, n1, n2);
+		
+		if(lca1!=null && lca2!=null)
+			return root;
+		if(lca1!=null)
+			return lca1;
+		else
+			return lca2;
+		
 	}
 
 	/*
