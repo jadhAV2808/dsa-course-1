@@ -1,0 +1,5 @@
+Intro: 
+for every node, data in left node are smaller & 
+data in right side is greater.
+all keys are typically considered as distinct.
+linked DS.
