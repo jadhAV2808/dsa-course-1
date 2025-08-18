@@ -1,11 +1,11 @@
 package bst;
 
 /*
- * floor: closest smaller or equal value 
+ * Ceil:next greater or equal
  */
 
-public class FloorInBST {
-
+public class CeilInBST {
+	
 	public static void main(String[] args) {
 		Node root = new Node(15);
 		root.left = new Node(5);
@@ -17,26 +17,30 @@ public class FloorInBST {
 		
 		root.right.left.left=new Node(16);
 		
-		Node floor = findFloor(root, 19);
-		System.out.println("floor: "+ floor.data);
+		Node ceil = findCeil(root, 17);
+		System.out.println("ceil: "+ ceil.data);
 	}
 
 	/*
-	 * efficient
-	 * O(n)
+	 * tc:O(h)
+	 * sc: O(1)
 	 */
-	private static Node findFloor(Node root, int x) {
-		Node res =null;
-		while(root!=null) {
+	private static Node findCeil(Node root, int x) {
+		Node resNode =null;
+		
+		while (root!=null) {
 			if(root.data==x)
 				return root;
-			else if(root.data>x)
-				root=root.left;
-			else {
-				res = root;
+			if(root.data<x)
 				root=root.right;
+			else {
+				resNode=root;
+				root=root.left;
 			}
+			
+			
 		}
-		return res;
+		return resNode;
 	}
+
 }
