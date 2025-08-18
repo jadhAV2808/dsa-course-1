@@ -1,0 +1,29 @@
+
+Binary Heap: 
+
+used in heap-sort.
+used to implement priority-queue.
+
+Two types:
+ 1] Min Heap: Highest priority item is assigned to lowest value.
+ 2] Max Heap: Highest priority item is assigned to highest value.
+ 
+Binary Heap: binary heap is a complete binary tree.
+
+left(i) = 2*i+1
+right(i) = 2*i+2
+
+left(i) : means left child of i.
+right(i): means right child of i.
+
+
+parent(i) = [ (i-1)/2 ]
+
+parent(i): means parent of i.
+
+
+Min Heap: complete binary tree. 
+          every node has value smaller than its descendants(childs).
+      
+  
+
