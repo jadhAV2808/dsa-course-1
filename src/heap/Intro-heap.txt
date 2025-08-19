@@ -24,6 +24,11 @@ parent(i): means parent of i.
 
 Min Heap: complete binary tree. 
           every node has value smaller than its descendants(childs).
-      
-  
+
+
+PriorityQueue in JAva:
+ in java PriorityQueue is internally implemented using Min-Heap. 
+ if you want it in Max-Heap we can use Collections.reverseOrder() as follows: 
+       
+  PriorityQueue<Integer> pq  = new PriorityQueue<>(Collections.reverseOrder());
 
