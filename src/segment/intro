@@ -1,0 +1,6 @@
+Segment Tree: 
+  used for fixed size arrays &
+  following two types of operation: 
+  1] Range query.
+  2] update a value.
+

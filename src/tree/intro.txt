@@ -1,0 +1,32 @@
+Tree intro:
+
+node above : is parent
+node below it: is child
+
+degree: no of children it has
+leaf nodes: nodes has zero degrees, has no children
+
+Applications :
+  to represent hierarchical data, eg, organization structure, folder structure, XML/HTML content, OOPs
+  binary search tree
+  binary heap
+  B & B+ trees in DBMS
+  spanning & shortest path trees in computer n/w
+  parse trees
+
+Variations of tree: 
+   Trie
+   suffix tree
+   binary index tree
+   segment tree
+   
+Binary Tree:
+ every node has at-most 2 children, 
+ 
+  
+Tree Traversal:
+1] Breadth First OR level order traversal
+2] Depth First :  
+             1. Inorder: left-root-right
+             2. Preorder: root-left-right
+             3. Postorder: left-right-root

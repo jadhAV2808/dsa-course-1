@@ -1,0 +1,12 @@
+Intro: 
+for every node, data in left node are smaller & 
+data in right side is greater.
+all keys are typically considered as distinct.
+linked DS.
+
+Applications of BST: 
+ to maintain sorted stream of data(or sorted set of data)
+ to implement doubly ended priority Queue.
+ to solve problems like: 
+    1] count  smaller/greater in a stream.
+    2] floor/ ceiling/greater/smaller in a stream.

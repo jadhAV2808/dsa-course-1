@@ -1,0 +1,51 @@
+
+Graph: 
+     non-linear DS.
+     to represent random connections.
+     
+Directed Graph:  
+    eg. a social n/w ie. if v1 is friend of v2 then v2 also friend of v1.
+    sum of degrees = 2*E.
+    
+
+
+Undirected Graph:  
+     eg. worldwide web, consider v1, v2 is a page. v1 has link to page v2 but v2 might not have link to page v1.
+     
+     sum of indegrees = E
+     sum of outdegrees = E
+     
+Graph representations:
+1] adjacency matrix
+2] adjacency list
+
+adjacency matrix & adjacency list comparison
+
+                                    list                   matrix
+memeory                             O(V+E)                 O(V*V)
+check for edge from u to v          O(v)                   O(1) 
+find adj. of u                      O(degree u)            O(v)
+add an edge                         O(1)                   O(1)
+remve an edge                       O(v)                   O(1)
+
+
+
+Applications of BFS:
+shortest path in an un-weighted graph
+crawler in search engine.
+peer to peer n/w
+social n/w ing search
+in garbage colletion
+ford fulkerson algo
+broadcasting.
+
+
+Applications of DFS:
+
+cycle detection
+topological sorting
+strongly connected components
+solving maze & similar problems
+path finding
+
+
