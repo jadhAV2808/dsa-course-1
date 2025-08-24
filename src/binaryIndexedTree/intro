@@ -1,0 +1,4 @@
+
+Binary Indexed Tree:
+ used for fixed size arrays & 
+ perform Prefix Operation (Sum, Product, XOR, OR, etc). 
