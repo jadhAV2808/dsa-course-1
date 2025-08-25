@@ -1,0 +1,26 @@
+
+Dynamic Programming or DP:
+
+	It is mainly an optimization over plain recursion. 
+Wherever we see a recursive solution that has repeated calls for the same inputs, 
+we can optimize it using Dynamic Programming.
+	The idea is to simply store the results of subproblems so that we do not have to re-compute them when needed later.
+This simple optimization typically reduces time complexities from exponential to polynomial.
+
+Tabulation vs Memoization:
+
+Tabulation and memoization are two techniques used to implement dynamic programming. 
+Both techniques are used when there are overlapping subproblems (the same subproblem is executed multiple times). 
+Below is an overview of two approaches.
+
+Memoization:
+Top-down approach
+Stores the results of function calls in a table.
+Recursive implementation
+Entries are filled when needed.
+
+Tabulation:
+Bottom-up approach
+Stores the results of subproblems in a table
+Iterative implementation
+Entries are filled in a bottom-up manner from the smallest size to the final size.
